@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Layout</title>
+    <link rel="stylesheet" href="debug_layout.css">
+</head>
+<body>
+    <h1>Debug Layout</h1>
+    <section>
+        <h2>Vấn đề ban đầu</h2>
+        <p>Container 960px, sidebar và content đều dùng content-box nên tổng diện tích vượt quá, dẫn đến content bị xuống dòng.</p>
+        <div class="container original clearfix">
+            <div class="sidebar">Sidebar</div>
+            <div class="content">Content</div>
+        </div>
+    </section>
+    <section>
+        <h2>Cách sửa 1 — Dùng border-box</h2>
+        <div class="container fix-borderbox clearfix">
+            <div class="sidebar">Sidebar</div>
+            <div class="content">Content</div>
+        </div>
+    </section>
+    <section>
+        <h2>Cách sửa 2 — Giảm width nếu vẫn dùng content-box</h2>
+        <div class="container fix-contentbox clearfix">
+            <div class="sidebar">Sidebar</div>
+            <div class="content">Content</div>
+        </div>
+    </section>
+</body>
+</html>

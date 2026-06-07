@@ -1,0 +1,36 @@
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-size: 16px;
+    color: #333;
+}
+
+.container {
+    font-size: 14px;
+}
+
+.card {
+    color: blue;
+    padding: 16px;
+    border: 1px solid #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.card .title {
+    font-size: 20px;
+}
+
+.card p {
+    color: inherit;
+}
+
+#featured .title {
+    color: red;
+}
+
+.highlight {
+    color: green !important;
+}

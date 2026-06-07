@@ -1,0 +1,49 @@
+/* 0,0,1 */
+p {
+    color: gray;
+}
+
+/* 0,1,0 */
+.text {
+    color: blue;
+}
+
+/* 0,1,0 */
+.highlight {
+    color: green;
+}
+
+/* 0,1,1 */
+p.text {
+    color: purple;
+}
+
+/* 0,0,2 */
+div > p {
+    color: teal;
+}
+
+/* 1,0,0 */
+#demo {
+    color: orange;
+}
+
+/* 0,2,0 */
+.text.highlight {
+    color: olive;
+}
+
+/* 0,2,0 */
+.highlight[data-state="active"] {
+    color: brown;
+}
+
+/* 1,2,1 */
+p#demo.text.highlight {
+    color: magenta;
+}
+
+/* 1,1,0 + !important */
+#demo.highlight {
+    color: red !important;
+}
